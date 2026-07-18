@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="第 1 页" id="bNCVS_ip6FHN84XiTmmv">
+    <mxGraphModel dx="827" dy="533" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EPcULlC66XA53UDblDxn-30" edge="1" parent="1" source="EPcULlC66XA53UDblDxn-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EPcULlC66XA53UDblDxn-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPcULlC66XA53UDblDxn-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="get()&lt;div&gt;根据当前请求和上下文，决定下一个节点&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="185" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="EPcULlC66XA53UDblDxn-31" edge="1" parent="1" source="EPcULlC66XA53UDblDxn-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="EPcULlC66XA53UDblDxn-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EPcULlC66XA53UDblDxn-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="apply()&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="410" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="EPcULlC66XA53UDblDxn-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="StrategyMapper（接口）" vertex="1">
+          <mxGeometry height="30" width="150" x="170" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="EPcULlC66XA53UDblDxn-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="StrategyHandler（接口）" vertex="1">
+          <mxGeometry height="30" width="145" x="397.5" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="EPcULlC66XA53UDblDxn-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;" value="&lt;ul style=&quot;line-height: 130%;&quot;&gt;&lt;li&gt;重写apply()方法，在apply()方法里面增加了多线程方法&lt;/li&gt;&lt;li&gt;router()方法，在这个方法里面拿到下一个节点，执行下一个节点的apply()方法（多态，父类实现）&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="110" width="280" x="225" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="EPcULlC66XA53UDblDxn-32" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="AbstractMultiThreadStrategyRouter（抽象类）" vertex="1">
+          <mxGeometry height="30" width="260" x="235" y="600" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
